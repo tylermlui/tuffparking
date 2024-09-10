@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 def scrape():
     time = datetime.now().strftime('%H:%M:%S')
     html = httpx.get("https://parking.fullerton.edu/parkinglotcounts/mobile.aspx").text
-    soup = BeautifulSoup(html,features="lxml")
+    soup = BeautifulSoup(html)
     table = soup.find("table")
     rows = table.find_all("tr")
     areas = {}
