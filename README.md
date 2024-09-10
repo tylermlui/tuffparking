@@ -18,46 +18,53 @@ Once you visit the /scrape route, you’ll get a JSON response. Here’s an exam
 
 ```json
 {
+{
   "Eastside North": {
-    "availability": 787,
-    "fade_percentage": 1,
-    "last_update": "9/9/2024 11:51:00 AM",
-    "time": "10:33:31",
+    "availability": 169, Current spaces right now
+    "fade_percentage": 0.0898936170212766, This is used for the color value for each circle
+    "last_update": "9/10/2024 1:05:00 PM", The time it was last updated on CSUF's website
+    "time": "20:05:26", The time it was updated from the last refresh
     "total_spaces": 1880
   },
   "Eastside South": {
-    "availability": 467,
-    "fade_percentage": 1,
-    "last_update": "9/9/2024 11:51:00 AM",
-    "time": "10:33:31",
+    "availability": 63,
+    "fade_percentage": 0.04697986577181208,
+    "last_update": "9/10/2024 1:05:00 PM",
+    "time": "20:05:26",
     "total_spaces": 1341
   },
   "Fullerton Free Church": {
-    "availability": null,
-    "fade_percentage": 0,
+    "availability": 544,
+    "fade_percentage": 0.7771428571428571,
     "last_update": "08/26/2024 - 12/12/2024",
-    "time": "10:33:31",
+    "time": "20:05:26",
     "total_spaces": 700
   },
   "Lot A & G": {
-    "availability": 457,
-    "fade_percentage": 1,
-    "last_update": "9/9/2024 11:51:00 AM",
-    "time": "10:33:31",
+    "availability": 709,
+    "fade_percentage": 0.3369771863117871,
+    "last_update": "9/10/2024 1:05:00 PM",
+    "time": "20:05:26",
     "total_spaces": 2104
   },
   "Nutwood Structure": {
-    "availability": 2441,
-    "fade_percentage": 1,
-    "last_update": "9/10/2024 3:33:00 AM",
-    "time": "10:33:31",
+    "availability": 111,
+    "fade_percentage": 0.04468599033816425,
+    "last_update": "9/10/2024 1:05:00 PM",
+    "time": "20:05:26",
     "total_spaces": 2484
   },
   "State College Structure": {
-    "availability": 1156,
-    "fade_percentage": 1,
-    "last_update": "9/10/2024 3:33:00 AM",
-    "time": "10:33:31",
+    "availability": 53,
+    "fade_percentage": 0.03860160233066278,
+    "last_update": "9/10/2024 1:05:00 PM",
+    "time": "20:05:26",
     "total_spaces": 1373
   }
-} 
+}
+```
+**availability:** Current spaces right now <br>
+**fade_percentage:** This is used for the color value for each circle <br>
+**last_update:** The time it was last updated on CSUF's website <br>
+**time:** The time it was updated from the last refresh<br>
+**total_spaces:** Total spaces that are in the structure
