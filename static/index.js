@@ -72,18 +72,14 @@ function colorGradient(fadeFraction, rgbColor1, rgbColor2, rgbColor3) {
 
 
     function getGradient(dicAreas) {
-        console.log(dicAreas)
 
         for (let key in circles) {
-
             console.log(key, circles)
-
         for (let key in circles) {
 
-            const center = circles[key].center;
-            const fade_percentage = dicAreas[key].fade_percentage;
-            const color = colorGradient(fade_percentage, lowColor, mediumColor, highColor);
-        
+            var center = circles[key].center;
+            var fade_percentage = dicAreas[key].fade_percentage;
+            var color = colorGradient(fade_percentage, lowColor, mediumColor, highColor);
             var circle = L.circle(center, { color: color, radius: 150 });
             circle.bindTooltip("<span class='text-info'>" + circles[key].tooltip + "</span>", {
                 permanent: true,
@@ -92,9 +88,6 @@ function colorGradient(fadeFraction, rgbColor1, rgbColor2, rgbColor3) {
                 className: 'transparent-tooltip'
             });            
             circle.addTo(map);
-
-            
-            // addTo(map);
         }
             L.circle(center, { color: color, radius: 150 }).addTo(map);
         }
@@ -109,7 +102,4 @@ var Jawg_Matrix = L.tileLayer('https://tile.jawg.io/jawg-matrix/{z}/{x}/{y}{r}.p
 });
 Jawg_Matrix.addTo(map)
 
-
-
 var info = dicAreas
-// CartoDB_DarkMatter.addTo(map)

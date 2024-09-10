@@ -32,9 +32,14 @@ def scrape():
 
         total_spaces = int(structure_info[1].find_all('span')[1].text)
         last_update = structure_info[2].find("span").text
-
+        
         try:
-            fade_percentage = 0 if availability == None else max(0,min(1, availability))
+            if availability == None:
+                fade_percentage = 0
+            elif availability == "Open":
+                fade_percentage = 1
+            else:
+                fade_percentage = max(0,min(1, availability/total_spaces))
         except: 
             availability = "Open"
 
