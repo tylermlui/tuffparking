@@ -2,8 +2,10 @@ from flask import Flask, redirect
 from scrape import scrape
 from datetime import datetime
 import os
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app) 
 
 structure_coordinates = { 
         "Nutwood Structure" : [33.87900170185511, -117.88865432488892],
