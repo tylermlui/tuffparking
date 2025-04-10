@@ -1,5 +1,5 @@
 # Tuffparking🐘
-A better and more intuitive website and interface for Cal State Fullerton's parking structures. This is created with a flask backend and vanilla JavaScript, CSS, and HTML as the front end. Planning on making a react front end.
+A better and more intuitive website and interface for Cal State Fullerton's parking structures. This is created with a flask backend and vanilla JavaScript, CSS, and HTML as the front end.
 # Clone the repository
 `git clone https://github.com/tylermlui/tuffparking.git`
 # Run App
